@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+    <meta charset="UTF-8">
+    <html lang="pt-br">
+
+    <head>
+
+        <meta name="Calculadora" content="calculadora"/>
+        <title>Calculadora daora d+</title>
+        <link rel="stylesheet" href="../Calculadora/calculadora.css">
+        <script language="Javascript" src="../Calculadora/Calcul.js">
+
+        </script>
+
+    </head>
+
+    <body>
+
+        <h1>Calculadora</h1>
+
+        <div class="numeros">
+
+            <label id="texto">Digite o 1º número:</label>
+            <input type="text" id="digito1">
+            <br>
+            <label id="texto">Digite o 2º número:</label>
+            <input type="text" id="digito2">
+
+        </div>
+
+        <div class="contas">
+
+            <button id="operacao" onclick="Calcular('+','rgb(255, 255, 175)')">+</button>
+            <button id="operacao" onclick="Calcular('x','rgb(175, 255, 246)')">x</button>
+            <button id="operacao" onclick="Calcular('-','rgb(255, 175, 175)')">-</button>
+            <button id="operacao" onclick="Calcular('/','rgb(207, 175, 255)')">/</button>
+
+        </div>
+
+        <div id="degrade1"></div>
+        <div id="degrade2"></div>
+        <label id="total">Resultado:</label>
+        <input type="text" id="result">
+        <br>
+        <button id="limpar" onclick="Limpar()">Limpar <img src="./img/icons8-lixo-100.png"></button>
+    </body>
+</html>

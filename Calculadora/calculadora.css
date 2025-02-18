@@ -1,0 +1,164 @@
+@font-face {
+    font-family: lemon;
+    src: url(./fontes/LEMONMILK-Light.otf);
+}
+
+body
+{
+    text-align: center;
+    background-color: #d7ffaf;
+    height: 780px;
+    font-family: lemon;
+}
+
+[id*="digito"]
+{
+    height: 40px;
+    width: 100px;
+}
+
+h1
+{
+    color: rgb(45, 64, 25);
+    font-size: 50px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+}
+
+input
+{
+    font-size: 40px;
+}
+
+label
+{
+    margin: 0px;
+    font-size: 35px;
+   
+}
+
+input[type=text]
+{
+    text-align: center;
+    border: 3px solid rgb(80, 123, 38);
+    border-radius: 20px;
+    font-family: lemon;
+}
+
+button
+{
+    font-size: 40px;
+    width: 50px;
+    width: 50px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    background-color: rgb(80, 123, 38);
+    color: white;
+}
+
+
+#limpar
+{
+    width: auto;
+    height: auto;
+    border: 10px solid transparent;
+    border-radius: 20px;
+    transition-duration: 0.5s;
+    display: inline-flex;
+    font-family: lemon;
+    font-size: 35px;
+}
+
+#limpar:hover
+{
+    background-color: red;
+    transition-duration: 0.5s;
+}
+
+#limpar:hover>img
+{
+    animation: imagem_aparecendo 0.3s;
+    transition-duration: 0.5s;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    
+}
+
+@keyframes imagem_aparecendo
+{
+    from
+    {
+        width: 0px;
+        height: 40px;
+       
+    }
+
+    to 
+    {
+        
+        width: 40px;
+        height: 40px;
+    }
+}
+
+#limpar img
+{
+    transition-duration: 0.5s;
+    width: 0px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+button:hover
+{
+    cursor: pointer;
+}
+
+#digito2
+{
+    margin-top: 30px;
+}
+
+#texto
+{
+    font-size: 35px;
+}
+
+#operacao:hover
+{
+    /* background-color: rgb(40, 63, 17); */
+    box-shadow: 0px 5px 5px rgb(45, 64, 25);
+    scale: 1.1;
+    transition-duration: 0.5s;
+}
+
+#operacao
+{
+    transition-duration: 0.5s;
+}
+
+#degrade1
+{
+    position: absolute;
+    z-index: -55;
+    width: 500px;
+    height: 500px;
+    top: -200px;
+    background: radial-gradient(rgb(104, 146, 63), rgb(215, 255, 175)70%);
+}
+
+#degrade2
+{
+    position: absolute;
+    z-index: -70;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(rgb(104, 146, 63), rgb(215, 255, 175)70%);
+    bottom: 30px;
+    right: 0px;
+}
