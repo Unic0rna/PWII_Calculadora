@@ -1,49 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <!-- <meta name="viewport"  -->
+         <link rel="stylesheet" href="./src/css/estilo.css">
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>MMC</title>
-</head>
-
-<body>
-    <div class="paizao">
-        <h1>Calcule o seu peso ideal</h1>
-        <div>
-            <label for="pesuzo">Informe o seu peso</label>
-            <input type="text" id="pesuzo" name="pesuzo" class="pesuzo">
-
-        </div>
-        <div>
-            <label for="alto">Informe sua altura</label>
-            <input type="text" id="alto" name="alto" class="alto">
-        </div>
-
-        <label for="sexo">Informe o seu sexo:</label>
-        <div class="femmale">
-            <input type="radio" id="sexoF" name="sexo" class="sexoF">
-            <label for="sexo">F</label>
-            <input type="radio" id="sexoM" name="sexo" class="sexoM">
-            <label for="sexo">M</label>
-        </div>
-        <div>
-            <label for="resultPeso">O seu IMC é</label>
-            <input type="text" id="resultPeso" name="resultPeso" class="resultPeso" placeholder="olha ai seu loco" disabled>
-        </div>
-        <div>
-            <label for="orientacao">O seu peso ideal é</label>
-            <input type="text" id="orientacao" name="orientacao" class="orientacao" disabled>
-        </div>
-
-        <div>
-        <input type="button" value="Calcular" onclick="calc()">
-        <input type="button" value="Limpar" onclick="clear()">
-    </div>
-    </div>
-</body>
-<script src="index.js"></script>
-
-
+    <body>
+        <section id="tela">
+            <label>Digite seu peso:</label>
+            <input type="text" id="peso">
+            <br>
+            <label>Digite sua altura:</label>
+            <input type="text" id="altura">
+            <br>
+            <label>Informe seu sexo:</label>
+            <input type="radio" id="sexof">F
+            <input type="radio" id="sexof">M
+            <br>
+            <label>O valor do seu peso ideal é:</label>
+            <input type="text" disabled id="pesoIdeal">
+            <br>
+            <label>Orientação:</label>
+            <input type="text" disabled id="imc">
+            <br>
+            <input type="text" id="resposta" disabled >
+            <br>
+            <button id="calcular" onclick="Calcular()">Calcular</button>
+            <button id="limpar">Limpar</button>
+        </section>
+        <script src="./src/javascript/script.js"></script>
+    </body>
 </html>
